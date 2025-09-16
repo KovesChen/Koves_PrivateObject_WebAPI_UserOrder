@@ -107,7 +107,7 @@ Authorization: Bearer {token}
 #### 2.1 查詢使用者
 
 * **URL:** `GET /api/Users`
-* **授權角色:** `Admin` / `User`
+* **授權角色:** `Admin`  => 可以查全部清單 / `User` => 僅能查自己的資料
 
 ---
 
