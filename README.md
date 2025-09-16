@@ -5,10 +5,10 @@ UserOrder Web API 是一個簡單的訂單管理系統，提供使用者、商�
 技術棧：
 - .NET 8.0
 - Entity Framework Core
-- AutoMapper
+- AutoMapper + DTO
 - JWT 驗證
 - SQL Server
-- 
+  
 主要功能：
 - 使用者帳號管理
 - 商品管理
