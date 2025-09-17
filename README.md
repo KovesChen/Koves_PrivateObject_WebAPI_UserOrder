@@ -1,26 +1,32 @@
-# UserOrder Web API
+# KOVES CHEN UserOrder Web API
 
 ## 專案說明
 UserOrder Web API 是一個簡單的訂單管理系統，提供使用者、商品、訂單的 CRUD 與查詢功能。  
-技術棧：
-- .NET 8.0
-- Entity Framework Core
-- AutoMapper + DTO
-- JWT 驗證
-- SQL Server
-  
-主要功能：
-- 使用者帳號管理
-- 商品管理
-- 訂單管理
-- JWT 認證與角色授權
+
+### 🛠️ 技術棧
+* **.NET 8.0** – Web API 框架
+* **Entity Framework Core** – ORM 資料存取
+* **SQL Server** – 資料庫
+* **AutoMapper + DTO** – 資料轉換與回傳模型
+* **JWT Authentication** – 驗證與授權機制
+
+### 🎯 功能模組
+* 使用者帳號管理 (註冊 / 查詢 / 修改 / 刪除)
+* 商品管理 (查詢 / 新增 / 修改 / 下架)
+* 訂單管理 (查詢 / 新增 / 修改狀態 / 取消)
+* JWT 登入認證與角色授權
+
+### 🏗️ 架構設計
+* 採用 **DI (依賴注入)** 管理服務生命週期
+* 使用 **Interface + Service 分層**，確保程式可測試、可維護
+* 控制器僅負責 API 輸入輸出，商業邏輯封裝於 Service
 
 ---
 
 ## 授權規則
 | 角色  | 功能 |
 |-------|---------------------------------------------------|
-| Admin | CRUD 所有資源(使用者帳號管理、查看所有訂單、訂單管理) |
+| Admin | CRUD 所有資源 (使用者 / 商品 / 訂單)               |
 | User  | 新增訂單、查詢自己的訂單、查看商品清單               |
 
 所有 API 請求需要 JWT Token，放入 Header：
