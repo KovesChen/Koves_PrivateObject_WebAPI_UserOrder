@@ -21,6 +21,10 @@ UserOrder Web API 是一個簡單的訂單管理系統，提供使用者、商�
 * 使用 **Interface + Service 分層**，確保程式可測試、可維護
 * 控制器僅負責 API 輸入輸出，商業邏輯封裝於 Service
 
+### 🚀 Docker 部署 (嘗試中)
+* 我正在將 UserOrder Web API 容器化，以方便跨平台部署。  
+* 目前已完成基本 Dockerfile，但可能還需要調整資料庫連線與環境設定。
+
 ---
 
 ## 授權規則
